@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url("./img/untitled.jpg");
+  background-size: cover;
+  color: #bbecda;
+}
+body .select {
+  top: 40%;
+  left: 23vw;
+}
+body .newSelect {
+  top: 20px;
+}
+body .select, body .newSelect {
+  width: 500px;
+  position: relative;
+}
+body .select .select__label, body .select .newSelect__label, body .newSelect .select__label, body .newSelect .newSelect__label {
+  font-size: 40px;
+  font-weight: bold;
+  border: 2px solid #1bb9a7;
+  width: 70%;
+  border-radius: 5px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  box-shadow: 0 0 15px;
+  text-align: center;
+}
+body .select .select__drop-down, body .select .newSelect__drop-down, body .newSelect .select__drop-down, body .newSelect .newSelect__drop-down {
+  box-shadow: 0 0 15px;
+  display: none;
+  border: 2px solid #1bb9a7;
+  width: 70%;
+  position: absolute;
+  height: 200px;
+  overflow-y: auto;
+  border-radius: 5px;
+  font-size: 28px;
+}
+body .select .select__drop-down.active, body .select .newSelect__drop-down.active, body .newSelect .select__drop-down.active, body .newSelect .newSelect__drop-down.active {
+  display: block;
+}
+body .select .select__drop-down .select__item, body .select .newSelect__drop-down .select__item, body .newSelect .select__drop-down .select__item, body .newSelect .newSelect__drop-down .select__item {
+  list-style-type: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: 10px;
+}
+body .select .select__drop-down .select__item:hover, body .select .newSelect__drop-down .select__item:hover, body .newSelect .select__drop-down .select__item:hover, body .newSelect .newSelect__drop-down .select__item:hover {
+  background-color: rgba(0, 206, 209, 0.1);
+  cursor: pointer;
+}
+body .select .select__drop-down .select__group, body .select .newSelect__drop-down .select__group, body .newSelect .select__drop-down .select__group, body .newSelect .newSelect__drop-down .select__group {
+  padding-left: 50px;
+}
+body .select .select__drop-down .select__groups, body .select .newSelect__drop-down .select__groups, body .newSelect .select__drop-down .select__groups, body .newSelect .newSelect__drop-down .select__groups {
+  color: rgba(0, 206, 209, 0.5);
+}
+
+/*# sourceMappingURL=style.css.map */
